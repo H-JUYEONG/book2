@@ -9,7 +9,7 @@ public class AuthorApp {
 		AuthorDao authorDao = new AuthorDao();
 
 		// 추가
-		// int add = authorDao.insertAuthor("차은우", "멋쟁이");
+		// authorDao.insertAuthor("차은우", "멋쟁이");
 
 		// 삭제
 		// authorDao.deleteAuthor(13);

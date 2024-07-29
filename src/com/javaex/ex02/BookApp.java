@@ -9,7 +9,7 @@ public class BookApp {
 		BookDao bookDao = new BookDao();
 
 		// 추가
-		// int add = bookDao.insertBook("해리포터", "문학수첩", "2019-11-19", 2);
+		// bookDao.insertBook("해리포터", "문학수첩", "2019-11-19", 2);
 
 		// 삭제
 		// bookDao.deleteBook(12);
