@@ -9,7 +9,7 @@ public class AuthorApp {
 		AuthorDao authorDao = new AuthorDao();
 		
 		//*등록 수정 *삭제  조회1  *조회전체
-		
+		 
 		
 		//int count = authorDao.insertAuthor("황일영", "학원강사");
 		
