@@ -7,29 +7,28 @@ public class AuthorApp {
 	public static void main(String[] args) {
 
 		AuthorDao authorDao = new AuthorDao();
-
-		// 추가
-		// authorDao.insertAuthor("차은우", "멋쟁이");
-
-		// 삭제
-		// authorDao.deleteAuthor(13);
-
-		// 수정
-		// authorDao.updateAuthor("변백현", "가수", 2);
-
-		// 조회1
-//		AuthorVo authorVo = authorDao.selectAuthorOne(6);
-//		System.out.print(authorVo.getAuthorId() + ". ");
-//		System.out.print(authorVo.getAuthorName() + "\t");
-//		System.out.print(authorVo.getAuthorDesc() + "\t");
-
-		// 전체 조회
-		List<AuthorVo> authorList = authorDao.selectAuthorAll(); // new 리스트 만들어서 주소만 전달한다.
-		for (int i = 0; i < authorList.size(); i++) {
-			System.out.print(authorList.get(i).getAuthorId() + ". ");
-			System.out.print(authorList.get(i).getAuthorName() + "\t");
-			System.out.println(authorList.get(i).getAuthorDesc());
+		
+		//*등록 수정 *삭제  조회1  *조회전체
+		
+		
+		//int count = authorDao.insertAuthor("황일영", "학원강사");
+		
+		//authorDao.deleteAuthor(9);
+		
+		
+		List<AuthorVo> authorList = authorDao.selectAuthorAll(); //new리스트만들어서 주소만 전달한다
+		//System.out.println(authorList);
+		//이름만출력
+		for(int i=0; i<authorList.size(); i++) {
+			System.out.println(authorList.get(i).getAuthorName());
 		}
+		
+		authorDao.updateAuthor(6, "황일영", "학원강사");
+		AuthorVo authorVo = authorDao.selectAuthor(6);
+		System.out.println(authorVo);
+		
+		//
+
 	}
 
 }

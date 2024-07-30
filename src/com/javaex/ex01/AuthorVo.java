@@ -2,26 +2,28 @@ package com.javaex.ex01;
 
 public class AuthorVo {
 
-	private int authorId;
+	//필드
+	private int authrId;
 	private String authorName;
 	private String authorDesc;
 
+	//생성자
 	public AuthorVo() {
-
 	}
 
-	public AuthorVo(int authorId, String authorName, String authorDesc) {
-		this.authorId = authorId;
+	//메소드-gs
+	public AuthorVo(int authrId, String authorName, String authorDesc) {
+		this.authrId = authrId;
 		this.authorName = authorName;
 		this.authorDesc = authorDesc;
 	}
 
-	public int getAuthorId() {
-		return authorId;
+	public int getAuthrId() {
+		return authrId;
 	}
 
-	public void setAuthorId(int authorId) {
-		this.authorId = authorId;
+	public void setAuthrId(int authrId) {
+		this.authrId = authrId;
 	}
 
 	public String getAuthorName() {
@@ -40,9 +42,10 @@ public class AuthorVo {
 		this.authorDesc = authorDesc;
 	}
 
+	//메소드-일반
 	@Override
 	public String toString() {
-		return "AuthorVo [authorId=" + authorId + ", authorName=" + authorName + ", authorDesc=" + authorDesc + "]";
+		return "AuthorVo [authrId=" + authrId + ", authorName=" + authorName + ", authorDesc=" + authorDesc + "]";
 	}
-
+	
 }
